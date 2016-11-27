@@ -29,9 +29,15 @@
         </receiver>
         <receiver android:name=".ChargingReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
-                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
             </intent-filter>
+        </receiver>
+        <receiver android:name=".StorageReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.ACTION_DEVICE_STORAGE_LOW" />
+            <action android:name="android.intent.action.ACTION_DEVICE_STORAGE_OK" />
+        </intent-filter>
         </receiver>
     </application>
 
